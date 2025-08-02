@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1029133350.svg)](https://doi.org/10.5281/zenodo.16723680)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 # Project Scope
 
 This repository provides an integrated bioinformatics pipeline for network pharmacology and immune microenvironment analysis. It encompasses four core modules:
@@ -35,3 +36,4 @@ Begin with **Module 2** for GEO data processing, followed by **Module 3** for im
 **Module 1** operates independently on pharmacological scores.  
 **Module 4** requires outputs from Modules 2 and 3.  
 All scripts specify working directories and input requirements in header comments.
+
