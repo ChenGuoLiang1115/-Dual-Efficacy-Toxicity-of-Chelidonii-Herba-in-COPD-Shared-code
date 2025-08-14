@@ -3,26 +3,28 @@
 ## Overview
 This R script processes molecular docking results from **AutoDock Vina** output logs, transforming raw data into structured analysis outputs. It extracts **binding affinity** and **RMSD** values for the top 20 docking modes from `log.txt` files, computes statistical metrics including **mean binding energy**, **standard deviation**, and **confidence intervals**, and generates three key outputs:
 
-1. **Detailed docking parameters table** — `Supplementary_Table_S1.csv`  
-2. **Statistical summary** — `Supplementary_Table_S2.csv`  
-3. **Binding energy distribution histogram** — `docking_energy_distribution.png`
+1. `Supplementary_Table_S1.csv` — Detailed docking parameters table  
+2. `Supplementary_Table_S2.csv` — Statistical summary  
+3. `docking_energy_distribution.png` — Binding energy distribution histogram
 
-## Key Functionalities
-- Extraction of docking modes and affinity values  
-- RMSD data processing and cleaning  
-- Statistical computation, including confidence interval determination  
-- Publication-ready outputs with integrated visualization  
-- Robust parsing to handle **Vina** log format variations  
-- Real-time console feedback confirming:
+## Features
+- Robust parsing to handle format variations in **Vina** logs  
+- Automated statistical calculations (mean, SD, CI)  
+- Visual data representation for efficient analysis of molecular interactions  
+- Real-time console execution feedback confirming:
   - Successful file generation
-  - Summary statistics reporting
+  - Summary statistics
+
+## Key Functionality
+- Extraction of docking modes and affinity values  
+- RMSD data processing  
+- Statistical computation with confidence interval determination  
+- Generation of publication-ready outputs with integrated visualization  
 
 ## Output Details
-- **`Supplementary_Table_S1.csv`** — Contains extracted docking parameters for the top 20 modes  
-- **`Supplementary_Table_S2.csv`** — Includes statistical summaries (mean, SD, CI)  
-- **`docking_energy_distribution.png`** — Histogram visualization annotated with statistical parameters for quick interpretation
+- **Naming conventions**: consistent and descriptive  
+- **File format**: CSV for tabular data to ensure compatibility with downstream analysis  
+- **Visualization**: Histogram annotated with statistical parameters for immediate interpretation of binding energy distributions across docking modes
 
-## Workflow Standardization
-This tool standardizes molecular docking result analysis pipelines, ensuring **reproducible data processing** and **consistent output formatting**. All output files follow:
-- **Consistent naming conventions**
-- **CSV format compatibility** for seamless downstream analysis integration
+## Purpose
+This tool standardizes molecular docking result analysis pipelines and ensures **reproducible** and **organized** data processing for high-quality computational chemistry workflows.
